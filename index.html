@@ -360,7 +360,9 @@
         labels: {
           20: "海の日"
         },
-        note: "7月20日（月・海の日）は休講です。"
+        note: "7月20日（月・海の日）は休講です。",
+        // 8月1日以降は自動で非表示になる
+        hideAfter: "2026-08-01"
       },
       {
         year: 2026,
@@ -372,12 +374,31 @@
           11: "山の日"
         },
         note: "8月10日・13日・15日は休講です。"
+      },
+      {
+        year: 2026,
+        month: 9,
+        closed: [21],
+        extraOn: [],
+        smallMark: [],
+        labels: {
+          21: "敬老の日"
+        },
+        note: "9月21日（月・敬老の日）は休講です。<br>そのほかは月・木・土のカレンダー通りです。"
       }
     ];
 
     (function (configs) {
       var container = document.getElementById("calContainer");
       if (!container) return;
+
+      // hideAfter（YYYY-MM-DD）を過ぎた月は表示しない
+      var today = new Date();
+      configs = configs.filter(function (cfg) {
+        if (!cfg.hideAfter) return true;
+        var parts = cfg.hideAfter.split("-");
+        return today < new Date(+parts[0], +parts[1] - 1, +parts[2]);
+      });
 
       var monthNames = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
       var lessonDays = [1, 4, 6]; // 月=1, 木=4, 土=6
