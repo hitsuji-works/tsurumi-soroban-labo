@@ -77,6 +77,16 @@
       <div class="news-list" style="margin-top: 30px;">
         <article class="news-item">
           <div class="meta">
+            <time datetime="2026-08-31">2026.08.31</time>
+            <span class="cat">お知らせ</span>
+          </div>
+          <div>
+            <h3>10月の授業日カレンダーを公開しました</h3>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="meta">
             <time datetime="2026-07-27">2026.07.27</time>
             <span class="cat">お知らせ</span>
           </div>
@@ -383,7 +393,9 @@
         labels: {
           11: "山の日"
         },
-        note: "8月10日・13日・15日は休講です。"
+        note: "8月10日・13日・15日は休講です。",
+        // 9月1日以降は自動で非表示になる
+        hideAfter: "2026-09-01"
       },
       {
         year: 2026,
@@ -394,7 +406,22 @@
         labels: {
           21: "敬老の日"
         },
-        note: "9月21日（月・敬老の日）は休講です。<br>そのほかは月・木・土のカレンダー通りです。"
+        note: "9月21日（月・敬老の日）は休講です。<br>そのほかは月・木・土のカレンダー通りです。",
+        // 10月1日以降は自動で非表示になる
+        hideAfter: "2026-10-01"
+      },
+      {
+        year: 2026,
+        month: 10,
+        closed: [12, 31],
+        extraOn: [],
+        smallMark: [],
+        labels: {
+          12: "スポーツの日",
+          29: "振替授業",
+          31: "5週目"
+        },
+        note: "10月12日（月・スポーツの日）は休講です。<br>10月29日（木）は5週目ですが、12日の振替として授業を行います。<br>10月31日（土）は5週目のためお休みです。"
       }
     ];
 
