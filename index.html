@@ -8,10 +8,14 @@
   <link rel="apple-touch-icon" href="images/tsurumi_favicon.png" />
   <title>鶴見そろばんLabo — 大阪市鶴見区のそろばん教室</title>
   <meta name="description" content="楽しく通えて、気づけば算数が得意に。大阪市鶴見区今津中のそろばん教室、鶴見そろばんLabo。年中から小学生・中学生まで、お一人おひとりの進度に寄り添います。月・木 15:00〜19:00、土 9:00〜11:00。" />
+  <link rel="canonical" href="https://osaka-soroban.com/tsurumi/" />
   <meta property="og:title" content="鶴見そろばんLabo" />
   <meta property="og:description" content="楽しく通えて、気づけば算数が得意に。大阪市鶴見区のそろばん教室。年中〜中学生。" />
-  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:image" content="https://osaka-soroban.com/tsurumi/images/hero.jpg" />
+  <meta property="og:url" content="https://osaka-soroban.com/tsurumi/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="鶴見そろばんLabo" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +31,92 @@
   </script>
   <meta name="google-site-verification" content="VU1IrU84xIc-_dTMWmAOTBG7pRNcVViVC2qAdKd0tZ0" />
   <meta name="google-site-verification" content="r4KokmY4GWZzCn-JT35_uGbexf6qWnH7g0Xp3YpgM0U" />
+
+  <!-- ============================================================
+       構造化データ（JSON-LD）
+       教室の基本情報をGoogleに機械可読な形で伝える。
+       住所・電話・営業時間・料金を変更したらここも直すこと。
+       阿倍野HP（abeno-soroban-labo/index.html）と同じ形式で2026-09-03に横展開。
+       ⚠️geo（緯度経度）は根拠となる地図埋め込みがこのページに無いため未設定。
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "@id": "https://osaka-soroban.com/tsurumi/#organization",
+    "name": "鶴見そろばんLabo",
+    "alternateName": "鶴見 そろばん Labo",
+    "description": "大阪市鶴見区今津中のそろばん教室。今津中学校・今津公園近く。年中から小学生・中学生まで、お一人おひとりの進度に寄り添います。",
+    "url": "https://osaka-soroban.com/tsurumi/",
+    "telephone": "+81-90-9677-2496",
+    "image": "https://osaka-soroban.com/tsurumi/images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "今津中1-6-11 シャトー幸福1階109号室",
+      "addressLocality": "大阪市鶴見区",
+      "addressRegion": "大阪府",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Thursday"],
+        "opens": "15:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "11:00"
+      }
+    ],
+    "priceRange": "￥4,500〜￥5,500",
+    "currenciesAccepted": "JPY",
+    "areaServed": [
+      { "@type": "City", "name": "大阪市鶴見区" }
+    ],
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "上田珠算学校グループ",
+      "url": "https://ueda-soroban-group.com/"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "月謝（回数制・税込）",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "月4回コース（1回80分）",
+          "price": "4500",
+          "priceCurrency": "JPY",
+          "category": "月謝"
+        },
+        {
+          "@type": "Offer",
+          "name": "月6回コース（1回60分）",
+          "price": "4900",
+          "priceCurrency": "JPY",
+          "category": "月謝"
+        },
+        {
+          "@type": "Offer",
+          "name": "月8回コース（1回60分）",
+          "price": "5300",
+          "priceCurrency": "JPY",
+          "category": "月謝"
+        },
+        {
+          "@type": "Offer",
+          "name": "月10回コース（1回60分）",
+          "price": "5500",
+          "priceCurrency": "JPY",
+          "category": "月謝"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
